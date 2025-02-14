@@ -2,6 +2,9 @@ format: jb-book
 root: intro.md
 
 parts:
+  - title: Week 1
+    chapters:
+    - file: assignments/WS1.1/README.md
   - caption: Miscellaneous
     chapters:
     - file: references.md
