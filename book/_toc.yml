@@ -5,8 +5,8 @@ parts:
   - title: Week 1
     chapters:
     - file: assignments/WS1.1/README.md
+    - file: assignments/
   - caption: Miscellaneous
     chapters:
-    - file: references.md
     - file: changelog.md
     - file: credits.md
