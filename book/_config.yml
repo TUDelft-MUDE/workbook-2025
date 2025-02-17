@@ -1,5 +1,5 @@
-Title: TeachBooks template
-author: TeachBooks Team, built with <a href="https://teachbooks.io">TeachBooks</a> and <a href="https://jupyterbook.org/">Jupyter Book</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer"">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a> #add your own name here
+Title: MUDE Workbook 2025
+author: MUDE Teachers and the Student Army from Delft University of Technology, built with <a href="https://teachbooks.io">TeachBooks</a> and <a href="https://jupyterbook.org/">Jupyter Book</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer"">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""></a> #add your own name here
 
 execute:
   execute_notebooks: "off"
@@ -7,8 +7,7 @@ execute:
 only_build_toc_files: true
 
 html:
-  favicon : "figures/TB_favicon.ico"
-  baseurl :  "https://teachbooks.io/" #Replace this with your own URL
+  baseurl :  "https://mude-2025.github.io/workbook/" #Replace this with your own URL
 
 sphinx:
   config:
@@ -19,15 +18,9 @@ sphinx:
       exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"]
     html_theme_options:
       logo:
-        text: Template
-        image_light: TeachBooks_logo.svg # Put your logo for the light mode here (can be the same as image_dark)
-        image_dark: TeachBooks_logo_inverted.svg # Put your logo for the dark mode here (can be the same as image_light)
-      repository_url: "https://github.com/user/repo" #add your own repo URL here
-      path_to_docs: "book"
-      repository_branch: "main"
-      use_edit_page_button: true
-      use_repository_button: true
-      use_issues_button : true
+        text: MUDE Workbook 2025
+        image_light: MUDE_Logo-small.png # Put your logo for the light mode here (can be the same as image_dark)
+        image_dark: MUDE_Logo-small.png # Put your logo for the dark mode here (can be the same as image_light)
       launch_buttons:
         thebe: true
     html_show_copyright: false
@@ -37,6 +30,7 @@ sphinx:
       chtml: {
         mtextInheritFont: true # To typeset text within math prettier
       }
+    tud_change_logo: false
   extra_extensions:
     - sphinx.ext.imgconverter
     - jupyterbook_patches
@@ -45,6 +39,7 @@ sphinx:
     - sphinx_image_inverter
     - sphinx_exercise
     - teachbooks_sphinx_tippy
+    - sphinx_tudelft_theme
 
 bibtex_bibfiles: 
   - references.bib
