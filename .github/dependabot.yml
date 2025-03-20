@@ -7,17 +7,7 @@ version: 2
 registries:
   submodule1-registry:
     type: "git"
-    url: https://github.com/MUDE-2025/PA1.1"
-    username: x-access-token
-    password: ${{secrets.GH_PAT}}
-  submodule2-registry:
-    type: "git"
-    url: "https://github.com/MUDE-2025/WS1.1"
-    username: x-access-token
-    password: ${{secrets.GH_PAT}}
-  submodule3-registry:
-    type: "git"
-    url: "https://github.com/MUDE-2025/GA1.1"
+    url: https://github.com/
     username: x-access-token
     password: ${{secrets.GH_PAT}}
     
@@ -30,5 +20,3 @@ updates:
       time: "23:59"
     registries:
       - submodule1-registry
-      - submodule2-registry
-      - submodule3-registry
