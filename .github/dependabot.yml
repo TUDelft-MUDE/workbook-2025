@@ -8,16 +8,19 @@ registries:
   submodule1-registry:
     type: "git"
     url: https://github.com/MUDE-2025/PA1.1"
-    token: "${{secrets.GH_PAT}}"
+    username: x-access-token
+    password: ${{secrets.GH_PAT}}
   submodule2-registry:
     type: "git"
     url: "https://github.com/MUDE-2025/WS1.1"
-    token: "${{secrets.GH_PAT}}"
+    username: x-access-token
+    password: ${{secrets.GH_PAT}}
   submodule3-registry:
     type: "git"
     url: "https://github.com/MUDE-2025/GA1.1"
-    token: "${{secrets.GH_PAT}}"
-
+    username: x-access-token
+    password: ${{secrets.GH_PAT}}
+    
 updates:
   - package-ecosystem: "gitsubmodule" # See documentation for possible values
     directory: "/" # Location of package manifests
