@@ -4,6 +4,13 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
+registries:
+  submodule1-registry:
+    type: "git"
+    url: https://github.com/
+    username: x-access-token
+    password: ${{secrets.GH_PAT}}
+    
 updates:
   - package-ecosystem: "gitsubmodule" # See documentation for possible values
     directory: "/" # Location of package manifests
@@ -11,3 +18,5 @@ updates:
       interval: "monthly"
       day: "sunday"
       time: "23:59"
+    registries:
+      - submodule1-registry
