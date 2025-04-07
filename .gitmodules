@@ -1,12 +1,12 @@
 [submodule "book/assignments/WS1.1"]
 	path = book/assignments/WS1.1
 	url = https://github.com/MUDE-2025/WS1.1.git
-	branch = main
+	branch = assignment
 [submodule "book/assignments/PA1.1"]
 	path = book/assignments/PA1.1
 	url = https://github.com/MUDE-2025/PA1.1.git
-	branch = main
+	branch = assignment
 [submodule "book/assignments/GA1.1"]
 	path = book/assignments/GA1.1
 	url = https://github.com/MUDE-2025/GA1.1.git
-	branch = main
+	branch = assignment
