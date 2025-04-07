@@ -6,6 +6,8 @@ parts:
   - caption: Week 1
     chapters:
     - file: assignments/PA1.1/README.md
+      sections:
+      - file: assignments/PA1.1/ipynb_template.ipynb
     - file: assignments/WS1.1/README.md
     - file: assignments/GA1.1/README.md
 # END REMOVE-FROM-RELEASE
