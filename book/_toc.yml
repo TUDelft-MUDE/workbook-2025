@@ -8,7 +8,9 @@ parts:
     - file: assignments/PA1.1/README.md
       sections:
       - file: assignments/PA1.1/ipynb_template.ipynb
+        title: Notebook
       - file: assignments/PA1.1/report_template.md
+        title: Report
     - file: assignments/WS1.1/README.md
     - file: assignments/GA1.1/README.md
 # END REMOVE-FROM-RELEASE
