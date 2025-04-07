@@ -21,6 +21,8 @@ sphinx:
         text: Workbook 2025
         image_light: MUDE_Logo-small.png # Put your logo for the light mode here (can be the same as image_dark)
         image_dark: MUDE_Logo-small.png # Put your logo for the dark mode here (can be the same as image_light)
+      launch_buttons:
+        thebe: true
     html_show_copyright: false
     html_last_updated_fmt: '%B %-d, %Y'
     html_static_path: ["figures"] # add folders that contain files that need to be included, such as the location of the logo(s)
@@ -38,9 +40,6 @@ sphinx:
     - sphinx_exercise
     - teachbooks_sphinx_tippy
     - sphinx_tudelft_theme
-
-launch_buttons:
-  thebe: true
 
 bibtex_bibfiles: 
   - references.bib
