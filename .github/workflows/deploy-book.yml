@@ -7,6 +7,7 @@ on:
   push:
     branches:
     - '**'
+    - '!dependabot**'
     # If your git repository has the Jupyter Book within some-subfolder next to
     # unrelated files, you can make this run only if a file within that specific
     # folder (or the workflow file itself) has been modified.
@@ -14,7 +15,6 @@ on:
     paths:
     - book/**
     - requirements.txt
-    - .github/workflows/call-deploy-book.yml
   workflow_dispatch:
 
 # Inherit configuration variables in the environment, or assign default values.
