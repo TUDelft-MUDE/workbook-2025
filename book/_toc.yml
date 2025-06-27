@@ -3,26 +3,6 @@ root: intro.md
 
 parts:
 # START REMOVE-FROM-RELEASE
-  - caption: Week 1.1
-    chapters:
-    - file: assignments/PA1.1/README.md
-      title: PA1.1 README
-      sections:
-      - file: assignments/PA1.1/ipynb_template.ipynb
-        title: Notebook
-      - file: assignments/PA1.1/report_template.md
-        title: Report
-    - file: assignments/WS1.1/README.md
-      title: WS1.1 README
-    - file: assignments/GA1.1/README.md
-      title: GA1.1 README
-  - caption: Week 2.7
-    chapters:
-    - file: assignments/PA2.7/README.md
-      title: PA2.7 README
-      sections:
-      - file: assignments/PA2.7/PA_2_7_Times_Tables.ipynb
-        title: Notebook
 # END REMOVE-FROM-RELEASE
   - caption: Miscellaneous
     chapters:
