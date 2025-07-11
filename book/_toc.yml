@@ -3,8 +3,13 @@ root: intro.md
 
 parts:
 # START REMOVE-FROM-RELEASE
+- caption: Assignments
+  chapters:
+  - file: assignments/PA1.1/README.md
+    sections:
+    - file: assignments/PA1.1/1_install_conda.md
 # END REMOVE-FROM-RELEASE
-  - caption: Miscellaneous
-    chapters:
-    - file: changelog.md
-    - file: credits.md
+- caption: Miscellaneous
+  chapters:
+  - file: changelog.md
+  - file: credits.md
