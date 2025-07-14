@@ -3,21 +3,18 @@ root: intro.md
 
 parts:
 # START REMOVE-FROM-RELEASE
-  - caption: Week 1
-    chapters:
-    - file: assignments/PA1.1/README.md
-      title: PA1.1 README
-      sections:
-      - file: assignments/PA1.1/ipynb_template.ipynb
-        title: Notebook
-      - file: assignments/PA1.1/report_template.md
-        title: Report
-    - file: assignments/WS1.1/README.md
-      title: WS1.1 README
-    - file: assignments/GA1.1/README.md
-      title: GA1.1 README
+- caption: Assignments
+  chapters:
+  - file: assignments/PA1.1/README.md
+    sections:
+    - file: assignments/PA1.1/1_enable_hidden_files.md
+    - file: assignments/PA1.1/2_install_conda.md
+    - file: assignments/PA1.1/3_install_VS_code.md
+    - file: assignments/PA1.1/4_install_mude_environment.md
+    - file: assignments/PA1.1/5_test.ipynb
+    - file: assignments/PA1.1/6_github_copilot.md
 # END REMOVE-FROM-RELEASE
-  - caption: Miscellaneous
-    chapters:
-    - file: changelog.md
-    - file: credits.md
+- caption: Miscellaneous
+  chapters:
+  - file: changelog.md
+  - file: credits.md

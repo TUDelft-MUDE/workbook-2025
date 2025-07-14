@@ -7,6 +7,7 @@ on:
   push:
     branches:
     - '**'
+    - '!dependabot**'
     # If your git repository has the Jupyter Book within some-subfolder next to
     # unrelated files, you can make this run only if a file within that specific
     # folder (or the workflow file itself) has been modified.
@@ -14,7 +15,6 @@ on:
     paths:
     - book/**
     - requirements.txt
-    - .github/workflows/call-deploy-book.yml
   workflow_dispatch:
 
 # Inherit configuration variables in the environment, or assign default values.
@@ -73,7 +73,32 @@ env:
 
 
 jobs:
+  merge-to-release:
+    if: ${{ github.ref == 'refs/heads/draft' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_PAT }}
+      
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Merge draft into release
+        run: |
+          git checkout release
+          git merge draft --no-ff -m "Auto-merge draft into release"
+          git push origin release
+
   get-branches:
+    needs: merge-to-release
+    if: always() && (needs.merge-to-release.result == 'success' || needs.merge-to-release.result == 'skipped')
     runs-on: ubuntu-latest
     outputs:
       branches: ${{ steps.set-branches.outputs.branches }}
