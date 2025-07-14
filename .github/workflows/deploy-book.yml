@@ -97,6 +97,8 @@ jobs:
           git push origin release
 
   get-branches:
+    needs: merge-to-release
+    if: always() && (needs.merge-to-release.result == 'success' || needs.merge-to-release.result == 'skipped')
     runs-on: ubuntu-latest
     outputs:
       branches: ${{ steps.set-branches.outputs.branches }}
