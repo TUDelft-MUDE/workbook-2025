@@ -73,6 +73,29 @@ env:
 
 
 jobs:
+  merge-to-release:
+    if: ${{ github.ref == 'refs/heads/draft' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_PAT }}
+      
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Merge draft into release
+        run: |
+          git checkout release
+          git merge draft --no-ff -m "Auto-merge draft into release"
+          git push origin release
+
   get-branches:
     runs-on: ubuntu-latest
     outputs:
