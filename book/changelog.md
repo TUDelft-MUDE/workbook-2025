@@ -1,4 +1,4 @@
 # Changelog
 
-## `<date>` [`<release name>`](<`link to release on GitHub>`)
-- `<Added/modified/deleted>` [](`<relative link to changed file>`)
+## 2025-08-20 v2025.0.1
+Empty workbook published ready for next year
