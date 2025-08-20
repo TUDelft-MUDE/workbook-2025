@@ -1,0 +1,59 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Modelling, Uncertainty and Data for Engineers (MUDE) Files
+message: >-
+  Complete information is provided in the README for This
+  repository at https://github.com/TUDelft-MUDE/workbook-2025.
+type: software
+authors:
+  - given-names: Robert
+    family-names: Lanzafame
+  - given-names: Patricia
+    family-names: Mares Nasarre
+  - given-names: Sandra
+    family-names: Verhagen
+  - given-names: Frans
+    family-names: van der Meer
+  - given-names: Christiaan
+    family-names: Tiberius
+  - given-names: Iuri
+    family-names: Rocha
+  - given-names: Tom
+    family-names: van Woudenberg
+  - given-names: Ronald
+    family-names: Brinkgreve
+  - given-names: Max
+    family-names: Ramgraber
+  - given-names: Lotfi
+    family-names: Massarweh
+  - given-names: Marcel
+    family-names: Zijlema
+  - given-names: Nadia
+    family-names: Pourmohammadzia
+  - given-names: Oswaldo
+    family-names: Morales Napoles
+identifiers:
+  - type: website
+    value: https://mude.citg.tudelft.nl/workbook-2025/
+    description: Website showing preview of all files
+repository-code: 'https://github.com/TUDelft-MUDE/workbook-2025'
+abstract: >-
+  This repository primarily contains MUDE Files from the
+  2025-2026 academic year. MUDE stands for Modelling, Uncertainty
+  and Data for Engineers, a required module in the MSc programs
+  from the faculty of Civil Engineering and Geosciences at
+  Delft University of Technology in the Netherlands.
+keywords:
+  - open interactive textbook
+  - education
+  - teachbooks
+  - engineering
+  - civil
+  - environmental
+  - geoscience
+  - python
+  - jupyter
+license: CC-BY-4.0
