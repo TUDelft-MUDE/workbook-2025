@@ -3,7 +3,7 @@
 
 You can refer to the most recent version of this book as:
 
-> Ding, J., van der Meer, F., van Woudenberg, T., R. Lanzafame, S. Verhagen (Eds.) (n.d.), Modelling, Uncertainty and Data for Engineers (MUDE) workbook, Delft University of Technology. https://mude.citg.tudelft.nl/workbook-2025, CC BY 4.0.
+> Ding, J., van der Meer, F., van Woudenberg, T., Lanzafame, R. & Verhagen S. (Eds.) (n.d.), Modelling, Uncertainty and Data for Engineers (MUDE) workbook, Delft University of Technology. https://mude.citg.tudelft.nl/workbook-2025, CC BY 4.0.
 
 The structure of the book and formatting of contents is done under direction of the Editors, in collaboration with a large team of co-authors and student assistants. Some assignments and pages have additional primary authors who are identified on those pages as necessary. If an author is not listed on a particular chapter or page, the editors may be attributed as the authors. Furthermore, as contents of this book may change, we cannot guarantee that chapter titles and URL's will remain static indefinitely. Therefore, if it is important for you to reference a specific location within the book, we recommend including the complete URL and version in your reference:
 
