@@ -6,16 +6,17 @@ title: >-
   Modelling, Uncertainty and Data for Engineers (MUDE) workbook
 message: >-
   This record preserves the source code for the MUDE workbook
-  and is updated automatically by Zenodo. See the README
+  and is updated automatically by Zenodo. See the Credits page
+  of the workbook for complete citation information.
 type: software
 authors:
-  - given-names: Jding
+  - given-names: Ding
     family-names: Jialei
   - given-names: Robert
     family-names: Lanzafame
   - given-names: Frans
     family-names: van der Meer
-  - given-names: Sander
+  - given-names: Sandra
     family-names: Verhagen
   - given-names: Tom
     family-names: van Woudenberg
