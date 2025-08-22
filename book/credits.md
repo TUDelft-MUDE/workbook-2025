@@ -11,7 +11,7 @@ The structure of the book and formatting of contents is done under direction of 
 
 The assignments in its entirety is available in the 2024 edition (2025 edition will follow in spring 2026), which was in the form of a github repository and FTP-like website. please note that only for complete versions a DOI is created. Refer to this version as follows:
 
-> R. Lanzafame (Eds.) (2024), _Modelling, Uncertainty and Data for Engineers (MUDE) files._ Delft University of Technology. https://github.com/tudelft-mude/2024-files, version v2024.0.4, CC BY 4.0. [doi:10.5281/zenodo.16782515](https://doi.org/10.5281/zenodo.16782515).
+> R. Lanzafame (Eds.) (2024), _Modelling, Uncertainty and Data for Engineers (MUDE) files._ Delft University of Technology. https://github.com/tudelft-mude/2024-files, version v2024.1.0, CC BY 4.0. [doi:10.5281/zenodo.16782515](https://doi.org/10.5281/zenodo.16782515).
 
 ## How the book is made
 
