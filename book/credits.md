@@ -34,17 +34,3 @@ This manual is [CC BY 4.0 licensed](https://creativecommons.org/licenses/by/4.0/
 If an author is not listed on a particular page, it is by the Editors.
 
 Auxiliary files such as figures, code, videos, etc, are included under the license of this book and should be attributed to the authors of the chapter or page where they are used, unless otherwise stated below or in the file itself. Text-based files (i.e., non-binary) are typically stored in the repository, within the subdirectory where the source file of the chapter or page is located. Binary files are stored in an FTP server (`https://files.mude.citg.tudelft.nl/<binary_file_name>`). Videos and quiz questions are stored in and served from YouTube and H5p; contact the MUDE Team directly if you are interested in source materials for these resources.
-
-## Individual assignments
-
-Credits are provided here for chapters and pages that are released under the license of this book (internal resources). Please note that this is a living document and will be updated as new contributions are made. Whenever a complete version of the book is published, the state of contributions is finalized for that version. Use the guidance provided above to properly share, reuse and cite relevant chapters, pages or any other resources from this book.
-
-### Programming assignment 1.1 Catch them all
-
-> [Programming assignment 1.1](./assignments/PA1.1/README.md) is written by Tom van Woudenberg and Robert Lanzafame.
-
-### Programming assignment 1.2 Markdown Mania & Array Artistry
-
-> [Programming assignment 1.2](./assignments/PA1.2/README.md) is written by Tom van Woudenberg and Robert Lanzafame.
-
-...
