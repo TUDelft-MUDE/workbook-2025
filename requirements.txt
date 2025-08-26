@@ -4,5 +4,5 @@ jupyterbook-patches
 sphinx-image-inverter
 download_link_replacer
 sphinx-exercise
-teachbooks-sphinx-tippy
+teachbooks-sphinx-tippy #BUMP
 sphinx-tudelft-theme #BUMP
