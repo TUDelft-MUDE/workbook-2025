@@ -2,7 +2,6 @@ format: jb-book
 root: intro.md
 
 parts:
-# START REMOVE-FROM-RELEASE
 - caption: Assignments
   chapters:
   - file: assignments/PA1.1/README.md
@@ -13,7 +12,6 @@ parts:
     - file: assignments/PA1.1/4_install_mude_environment.md
     - file: assignments/PA1.1/5_test.ipynb
     - file: assignments/PA1.1/6_github_copilot.md
-# END REMOVE-FROM-RELEASE
 - caption: Miscellaneous
   chapters:
   - file: changelog.md
