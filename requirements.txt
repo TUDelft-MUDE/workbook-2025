@@ -6,3 +6,4 @@ download_link_replacer
 sphinx-exercise
 teachbooks-sphinx-tippy #BUMP
 sphinx-tudelft-theme #BUMP
+sphinx-accessibility
