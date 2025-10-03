@@ -94,7 +94,7 @@ parts:
     - file: assignments/GA1.5/README.md
       sections:
       - file: assignments/GA1.5/gaussian_and_furious.ipynb
-# START REMOVE-FROM-PUBLISH
+
   - file: weeks/week6.md
     sections:
     - file: assignments/PA1.6/README.md
@@ -127,6 +127,8 @@ parts:
         - file: assignments/PA1.6/utils/__init__.md
         - file: assignments/PA1.6/utils/config.md
         - file: assignments/PA1.6/utils/rng.md
+        
+# START REMOVE-FROM-PUBLISH
 # END REMOVE-FROM-PUBLISH
 - caption: Miscellaneous
   chapters:
