@@ -8,6 +8,7 @@ on:
     branches:
     - '**'
     - '!dependabot**'
+    - '!no_solutions' # Exclude the no_solutions branch from triggering the workflow
     - '!release' # Exclude the release branch from triggering the workflow
     # If your git repository has the Jupyter Book within some-subfolder next to
     # unrelated files, you can make this run only if a file within that specific
@@ -84,7 +85,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GH_PAT }}
+          token: ${{ env.GH_TOKEN }}
+          submodules: 'true'
       
       - name: Configure Git
         run: |
