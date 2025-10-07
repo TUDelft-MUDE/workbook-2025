@@ -14,6 +14,7 @@ sphinx:
     html_theme_options:
       logo:
         text: Workbook 2025
+        link: "https://mude.citg.tudelft.nl/"
         image_light: MUDE_Logo-small.png
         image_dark: MUDE_Logo-small.png
       repository_url: "https://github.com/TUDelft-MUDE/workbook-2025"
