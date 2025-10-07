@@ -97,6 +97,54 @@ jobs:
           git merge draft --no-ff -m "Auto-merge draft into release"
           git push origin release
 
+      - name: Update submodules for no_solutions
+        run: |
+          # Fetch all branches and ensure we have the target branch
+          git fetch --all
+          # Checkout and reset to origin/no_solutions (assumed to exist)
+          git checkout no_solutions
+          git reset --hard origin/no_solutions
+
+          # Merge draft into no_solutions but preserve .gitmodules to avoid conflicts
+          # Save current .gitmodules
+          if [ -f .gitmodules ]; then
+            cp .gitmodules .gitmodules.bak
+          fi
+          # Merge draft
+          git fetch origin draft
+          git merge --no-edit origin/draft || true
+          # If merge changed .gitmodules, restore the backup
+          if [ -f .gitmodules.bak ]; then
+            if ! cmp -s .gitmodules .gitmodules.bak; then
+              echo ".gitmodules changed by merge; restoring previous version to avoid conflicts"
+              mv .gitmodules.bak .gitmodules
+              git add .gitmodules
+              git commit -m "Keep existing .gitmodules while merging draft into no_solutions" || true
+            else
+              rm -f .gitmodules.bak
+            fi
+          fi
+
+          # Ensure submodules are initialized
+          git submodule init
+
+          # Initialize and update all submodules, following their configured branch (if set)
+          git submodule update --init --recursive --remote || true
+          echo "Submodule updates complete"
+
+          # If there are changes (updated submodule SHAs), commit and push to no_solutions
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "Update submodules according to .gitmodules" || echo "Nothing to commit"
+
+            # Push changes; actions/checkout was invoked with a token so a plain push should work
+            git push origin no_solutions || true
+          else
+            echo "No changes to submodules"
+          fi
+
+      
+
   get-branches:
     needs: merge-to-release
     if: always() && (needs.merge-to-release.result == 'success' || needs.merge-to-release.result == 'skipped')
