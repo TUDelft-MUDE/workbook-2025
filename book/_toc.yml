@@ -129,8 +129,13 @@ parts:
     - file: assignments/WS1.6/README.md
       sections:
       - file: assignments/WS1.6/pipe_dreams.ipynb
+      
 # START REMOVE-FROM-PUBLISH
+    - file: assignments/GA1.6/README.md
+      sections: 
+      - file: assignments/GA1.6/icey_dicey.ipynb
 # END REMOVE-FROM-PUBLISH
+
 - caption: Miscellaneous
   chapters:
   - file: changelog.md
