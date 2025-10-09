@@ -3,6 +3,4 @@ teachbooks # depends on jupyter-book
 
 sphinx-tudelft-theme #BUMP
 
-git+https://github.com/TeachBooks/TeachBooks-Favourites #BUMPBUMPBUMP
-
-git+https://github.com/TeachBooks/Sphinx-launch-buttons@versions
+git+https://github.com/TeachBooks/TeachBooks-Favourites@sphinx_launch_test #BUMPBUMPBUMP
