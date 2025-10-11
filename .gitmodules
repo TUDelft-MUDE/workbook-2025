@@ -85,7 +85,7 @@
 [submodule "book/assignments/PA1.6"]
 	path = book/assignments/PA1.6
 	url = https://github.com/MUDE-2025/PA1.6.git
-	branch = assingnment_book
+	branch = solution_book
 [submodule "book/assignments/PA1.5"]
 	path = book/assignments/PA1.5
 	url = https://github.com/MUDE-2025/PA1.5.git
