@@ -94,6 +94,7 @@ parts:
     - file: assignments/GA1.5/README.md
       sections:
       - file: assignments/GA1.5/gaussian_and_furious.ipynb
+      - file: assignments/GA1.5/report.md
   - file: weeks/week6.md
     sections:
     - file: assignments/PA1.6/README.md
@@ -131,10 +132,20 @@ parts:
     - file: assignments/WS1.6/README.md
       sections:
       - file: assignments/WS1.6/pipe_dreams.ipynb
-      
     - file: assignments/GA1.6/README.md
       sections: 
-      - file: assignments/GA1.6/icey_dicey.ipynb
+      - file: assignments/GA1.6/icey_dicey.ipynb  
+  - file: weeks/week7.md
+    sections:
+    - file: assignments/PA1.7/README.md
+      sections:
+      - file: assignments/PA1.7/1_setup_debug.md
+      - file: assignments/PA1.7/2_debug_py_file.md
+      - file: assignments/PA1.7/3_debug_notebook.ipynb
+      - file: assignments/PA1.7/4_rubber_ducky.ipynb
+      
+# START REMOVE-FROM-PUBLISH
+# END REMOVE-FROM-PUBLISH
 
 - caption: Miscellaneous
   chapters:
