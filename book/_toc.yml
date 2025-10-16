@@ -134,7 +134,8 @@ parts:
       - file: assignments/WS1.6/pipe_dreams.ipynb
     - file: assignments/GA1.6/README.md
       sections: 
-      - file: assignments/GA1.6/icey_dicey.ipynb  
+      - file: assignments/GA1.6/icey_dicey.ipynb
+      - file: assignments/GA1.6/report.md
   - file: weeks/week7.md
     sections:
     - file: assignments/PA1.7/README.md
