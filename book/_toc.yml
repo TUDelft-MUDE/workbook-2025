@@ -147,8 +147,12 @@ parts:
     - file: assignments/WS1.7/README.md
       sections:
       - file: assignments/WS1.7/is_it_melting.ipynb
-      
 # START REMOVE-FROM-PUBLISH
+    - file: assignments/GA1.7/README.md
+      sections:
+      - file: assignments/GA1.7/im_BLUE_dabadi.ipynb
+      
+
 # END REMOVE-FROM-PUBLISH
 
 - caption: Miscellaneous
