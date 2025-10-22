@@ -149,7 +149,8 @@ parts:
       - file: assignments/WS1.7/is_it_melting.ipynb
     - file: assignments/GA1.7/README.md
       sections:
-      - file: assignments/GA1.7/im_BLUE_dabadi.ipynb      
+      - file: assignments/GA1.7/im_BLUE_dabadi.ipynb
+      - file: assignments/GA1.7/report.md
   - file: weeks/week8.md
     sections:
     - file: assignments/WS1.8/README.md
