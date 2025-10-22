@@ -150,12 +150,12 @@ parts:
     - file: assignments/GA1.7/README.md
       sections:
       - file: assignments/GA1.7/im_BLUE_dabadi.ipynb      
-# START REMOVE-FROM-PUBLISH
   - file: weeks/week8.md
     sections:
     - file: assignments/WS1.8/README.md
       sections:
       - file: assignments/WS1.8/water_you_talking_about.ipynb
+# START REMOVE-FROM-PUBLISH
     - file: assignments/GA1.8/README.md
       sections:
       - file: assignments/GA1.8/im_BLUE_dabadi.ipynb
