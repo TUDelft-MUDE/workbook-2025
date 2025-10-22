@@ -37,7 +37,7 @@
 [submodule "book/assignments/WS1.8"]
 	path = book/assignments/WS1.8
 	url = https://github.com/MUDE-2025/WS1.8.git
-	branch = assignment
+	branch = solution
 [submodule "book/assignments/WS2.1"]
 	path = book/assignments/WS2.1
 	url = https://github.com/MUDE-2025/WS2.1.git
@@ -153,7 +153,7 @@
 [submodule "book/assignments/GA1.7"]
 	path = book/assignments/GA1.7
 	url = https://github.com/MUDE-2025/GA1.7.git
-	branch = assignment
+	branch = solution
 [submodule "book/assignments/GA1.8"]
 	path = book/assignments/GA1.8
 	url = https://github.com/MUDE-2025/GA1.8.git
