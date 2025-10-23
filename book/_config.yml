@@ -13,7 +13,7 @@ sphinx:
   config:
     html_theme_options:
       logo:
-        text: Workbook 2025
+        text: Workbook 2025 without solutions
         link: "https://mude.citg.tudelft.nl/"
         image_light: MUDE_Logo-small.png
         image_dark: MUDE_Logo-small.png
