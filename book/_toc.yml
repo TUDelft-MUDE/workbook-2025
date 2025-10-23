@@ -159,7 +159,8 @@ parts:
 # START REMOVE-FROM-PUBLISH
     - file: assignments/GA1.8/README.md
       sections:
-      - file: assignments/GA1.8/im_BLUE_dabadi.ipynb
+      - file: assignments/GA1.8/Fit_me_baby_one_more_time.ipynb
+      - file: assignments/GA1.8/report.md
 # END REMOVE-FROM-PUBLISH
 
 - caption: Miscellaneous
