@@ -155,7 +155,7 @@ parts:
     sections:
     - file: assignments/WS1.8/README.md
       sections:
-      - file: assignments/WS1.8/water_you_talking_about.ipynb
+      - file: assignments/WS1.8/water_you_talking_about.ipynb #BUMP
 # START REMOVE-FROM-PUBLISH
     - file: assignments/GA1.8/README.md
       sections:
