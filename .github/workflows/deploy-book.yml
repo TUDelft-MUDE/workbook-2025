@@ -127,9 +127,22 @@ jobs:
             fi
           fi
 
-          # Fail fast if any unexpected merge conflicts remain
+          # Auto-resolve any submodule conflicts by accepting draft's version (stage the submodule paths)
           if git ls-files -u | grep -q .; then
-            echo "::error ::Unexpected merge conflicts remain after restoring .gitmodules"
+            echo "Resolving submodule merge conflicts by accepting draft's version..."
+            git ls-files -u | cut -f2 | sort -u | while read -r path; do
+              # Check if this path is a submodule
+              if git config -f .gitmodules --get-regexp "submodule\..*\.path" | grep -q " $path$"; then
+                echo "Auto-resolving submodule conflict: $path"
+                # Stage the submodule path to accept the incoming (draft) version
+                git add "$path" || true
+              fi
+            done
+          fi
+
+          # Fail fast if any non-submodule merge conflicts remain
+          if git ls-files -u | grep -q .; then
+            echo "::error ::Unexpected merge conflicts remain after resolving submodules and restoring .gitmodules"
             git status --porcelain=v1 || true
             exit 1
           fi
