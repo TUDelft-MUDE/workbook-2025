@@ -23,7 +23,9 @@ sphinx:
       use_repository_button: true
       use_issues_button : true
       announcement: "<p>This version of the workbook doesn't include solutions. The version with solution can be found here: <a href='https://mude.citg.tudelft.nl/workbook-2025' style='color: cyan;'>mude.citg.tudelft.nl/workbook-2025</a></p>"
+# START REMOVE-FROM-PUBLISH
     keep_warnings: true
+# END REMOVE-FROM-PUBLISH
     html_show_copyright: false
     html_last_updated_fmt: '%B %-d, %Y'
     html_static_path: ["figures"] # add folders that contain files that need to be included, such as the location of the logo(s)
