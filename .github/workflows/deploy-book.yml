@@ -127,23 +127,31 @@ jobs:
             fi
           fi
 
-          # Ensure submodules are initialized
+          # Fail fast if any unexpected merge conflicts remain
+          if git ls-files -u | grep -q .; then
+            echo "::error ::Unexpected merge conflicts remain after restoring .gitmodules"
+            git status --porcelain=v1 || true
+            exit 1
+          fi
+
+          # Ensure submodules are initialized and remotes are synced with .gitmodules
           git submodule init
+          git submodule sync --recursive
 
           # Initialize and update all submodules, following their configured branch (if set)
           git submodule update --init --recursive --remote || true
           echo "Submodule updates complete"
 
-          # If there are changes (updated submodule SHAs), commit and push to no_solutions
+          # If there are changes (updated submodule SHAs), commit them
           if [ -n "$(git status --porcelain)" ]; then
             git add .
             git commit -m "Update submodules according to .gitmodules" || echo "Nothing to commit"
-
-            # Push changes; actions/checkout was invoked with a token so a plain push should work
-            git push origin no_solutions || true
           else
             echo "No changes to submodules"
           fi
+
+          # Always push no_solutions so merge commits are published even if submodules didn't change
+          git push origin no_solutions || true
 
       
 
