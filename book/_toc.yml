@@ -156,11 +156,11 @@ parts:
     - file: assignments/WS1.8/README.md
       sections:
       - file: assignments/WS1.8/water_you_talking_about.ipynb #BUMP
-# START REMOVE-FROM-PUBLISH
     - file: assignments/GA1.8/README.md
       sections:
       - file: assignments/GA1.8/Fit_me_baby_one_more_time.ipynb
       - file: assignments/GA1.8/report.md
+# START REMOVE-FROM-PUBLISH
 # END REMOVE-FROM-PUBLISH
 
 - caption: Miscellaneous
