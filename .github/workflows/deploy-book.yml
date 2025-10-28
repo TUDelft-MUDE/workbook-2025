@@ -147,11 +147,7 @@ jobs:
             exit 1
           fi
 
-          # Ensure submodules are initialized and remotes are synced with .gitmodules
-          git submodule init
-          git submodule sync --recursive
-
-          # Initialize and update all submodules, following their configured branch (if set)
+          # Update all submodules to follow their configured branch (if set in .gitmodules)
           git submodule update --init --recursive --remote || true
           echo "Submodule updates complete"
 
