@@ -1,7 +1,7 @@
 # first list the packages you wish to download from PyPI
 teachbooks # depends on jupyter-book
 
-sphinx-tudelft-theme #BUMP
+sphinx-tudelft-theme
 
-git+https://github.com/TeachBooks/TeachBooks-Favourites@sphinx_launch_test #BUMPBUMPBUMPBUMPBUMP
+git+https://github.com/TeachBooks/TeachBooks-Favourites
 
