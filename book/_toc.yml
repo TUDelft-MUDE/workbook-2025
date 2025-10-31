@@ -104,7 +104,6 @@ parts:
         - file: assignments/PA1.6/script.md
         - file: assignments/PA1.6/my_first_script.md
       - file: assignments/PA1.6/2_activate_github_copilot.md
-        sections:
       - file: assignments/PA1.6/3_LLMs_in_Practice.md
         sections:
         - file: assignments/PA1.6/main.md
