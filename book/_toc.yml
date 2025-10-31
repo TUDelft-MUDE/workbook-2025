@@ -4,7 +4,7 @@ root: intro.md
 parts:
 - caption: Assignments
   chapters:
-  - file: weeks/week1.md
+  - file: weeks/week1.md #BUMP
     sections:
     - file: assignments/PA1.1/README.md
       sections:
