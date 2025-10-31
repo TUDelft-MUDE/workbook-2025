@@ -101,10 +101,10 @@ parts:
       sections:
       - file: assignments/PA1.6/1_py_files.md
         sections:
+        - file: assignments/PA1.6/script.md
         - file: assignments/PA1.6/my_first_script.md
       - file: assignments/PA1.6/2_activate_github_copilot.md
         sections:
-        - file: assignments/PA1.6/script.md
       - file: assignments/PA1.6/3_LLMs_in_Practice.md
         sections:
         - file: assignments/PA1.6/main.md
@@ -162,6 +162,28 @@ parts:
       sections:
       - file: assignments/GA1.8/Fit_me_baby_one_more_time.ipynb
       - file: assignments/GA1.8/report.md
+  - file: weeks/week11.md
+    sections:
+    - file: assignments/PA2.0/README.md
+      sections:
+      - file: assignments/PA2.0/1_enable_hidden_files.md
+      - file: assignments/PA2.0/2_install_conda.md
+      - file: assignments/PA2.0/3_install_VS_code.md
+      - file: assignments/PA2.0/4_install_mude_environment.md
+      - file: assignments/PA2.0/5_test.ipynb
+      - file: assignments/PA2.0/6_github_copilot.md
+      - file: assignments/PA2.0/7_upload_github.md
+      - file: assignments/PA2.0/8_markdown.md
+      - file: assignments/PA2.0/9_markdown_ipynb.ipynb
+      - file: assignments/PA2.0/10_install_github_desktop.md
+      - file: assignments/PA2.0/11_commit_local.md
+      - file: assignments/PA2.0/12_commit_online.md
+      - file: assignments/PA2.0/13_fetch_pull.md
+      - file: assignments/PA2.0/14_install_git.md
+      - file: assignments/PA2.0/15_py_files.md
+        sections:
+        - file: assignments/PA1.6/script.md
+
 # START REMOVE-FROM-PUBLISH
 # END REMOVE-FROM-PUBLISH
 
