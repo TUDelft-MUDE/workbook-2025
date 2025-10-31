@@ -142,6 +142,8 @@ parts:
       sections:
       - file: assignments/PA1.7/1_setup_debug.md
       - file: assignments/PA1.7/2_debug_py_file.md
+        sections:
+        - file: assignments/PA1.7/debug_example.md
       - file: assignments/PA1.7/3_debug_notebook.ipynb
       - file: assignments/PA1.7/4_rubber_ducky.ipynb
     - file: assignments/WS1.7/README.md
