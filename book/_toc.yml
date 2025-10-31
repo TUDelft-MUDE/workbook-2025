@@ -182,7 +182,7 @@ parts:
       - file: assignments/PA2.0/14_install_git.md
       - file: assignments/PA2.0/15_py_files.md
         sections:
-        - file: assignments/PA1.6/script.md
+        - file: assignments/PA2.0/script.md
 
 # START REMOVE-FROM-PUBLISH
 # END REMOVE-FROM-PUBLISH
