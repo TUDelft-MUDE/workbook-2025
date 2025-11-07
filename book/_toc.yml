@@ -182,7 +182,8 @@ parts:
       - file: assignments/PA2.0/15_py_files.md
         sections:
         - file: assignments/PA2.0/script.md
-
+    - file: assignments/PA2.1/README.md
+  
 # START REMOVE-FROM-PUBLISH
 # END REMOVE-FROM-PUBLISH
 
