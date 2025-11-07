@@ -184,8 +184,8 @@ parts:
         - file: assignments/PA2.0/script.md
     - file: assignments/PA2.1/README.md
       sections:
-      - file: assignments/PA2.1/1_functional.md
-      - file: assignments/PA2.1/2_oop.md
+      - file: assignments/PA2.1/1_functional.ipynb
+      - file: assignments/PA2.1/2_oop.ipynb
   
 # START REMOVE-FROM-PUBLISH
 # END REMOVE-FROM-PUBLISH
