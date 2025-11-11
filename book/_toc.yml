@@ -186,10 +186,11 @@ parts:
       sections:
       - file: assignments/PA2.1/1_functional.ipynb
       - file: assignments/PA2.1/2_oop.ipynb
-  
 # START REMOVE-FROM-PUBLISH
+    - file: assignments/WS2.1/README.md
+      sections:
+      - file: assignments/WS2.1/ws09.ipynb
 # END REMOVE-FROM-PUBLISH
-
 - caption: Miscellaneous
   chapters:
   - file: changelog.md
