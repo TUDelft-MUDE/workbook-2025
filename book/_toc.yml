@@ -190,6 +190,10 @@ parts:
       sections:
       - file: assignments/WS2.1/ws09.ipynb
 # START REMOVE-FROM-PUBLISH
+    - file: assignments/GA2.1/README.md
+      sections:
+      - file: assignments/GA2.1/grp09.ipynb
+      - file: assignments/GA2.1/report.md
 # END REMOVE-FROM-PUBLISH
 - caption: Miscellaneous
   chapters:
