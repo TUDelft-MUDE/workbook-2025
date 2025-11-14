@@ -193,7 +193,19 @@ parts:
       sections:
       - file: assignments/GA2.1/grp09.ipynb
       - file: assignments/GA2.1/report.md
-# START REMOVE-FROM-PUBLISH
+  - file: weeks/week2_2.md
+    sections:
+    - file: assignments/PA2.2/README.md
+      sections:
+      - file: assignments/PA2.2/PA_2_2_sparse_v_dense.ipynb
+# START REMOVE-FROM-PUBLISH  
+    - file: assignments/WS2.2/README.md
+      sections:
+      - file: assignments/WS2.2/ws10.ipynb
+    - file: assignments/GA2.2/README.md
+      sections:
+      - file: assignments/GA2.2/grp10.ipynb
+      - file: assignments/GA2.2/report.md
 # END REMOVE-FROM-PUBLISH
 - caption: Miscellaneous
   chapters:
