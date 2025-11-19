@@ -198,11 +198,10 @@ parts:
     - file: assignments/PA2.2/README.md
       sections:
       - file: assignments/PA2.2/PA_2_2_sparse_v_dense.ipynb
-# START REMOVE-FROM-PUBLISH  
     - file: assignments/WS2.2/README.md
       sections:
       - file: assignments/WS2.2/WS_2_2.ipynb
-      
+# START REMOVE-FROM-PUBLISH  
     - file: assignments/GA2.2/README.md
       sections:
       - file: assignments/GA2.2/grp10.ipynb
