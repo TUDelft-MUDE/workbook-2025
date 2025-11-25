@@ -214,7 +214,6 @@ parts:
       - file: assignments/PA2.3/3_stem_plots.ipynb
       - file: assignments/PA2.3/4_errors.ipynb #BUMP
         sections:
-        - file: assignments/PA2.3/justIce.md
         - file: assignments/PA2.3/max_even_square.md
 # START REMOVE-FROM-PUBLISH  
 # END REMOVE-FROM-PUBLISH
