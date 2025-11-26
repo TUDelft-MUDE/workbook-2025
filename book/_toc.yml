@@ -215,11 +215,11 @@ parts:
       - file: assignments/PA2.3/4_errors.ipynb #BUMP
         sections:
         - file: assignments/PA2.3/max_even_square.md
-
-# START REMOVE-FROM-PUBLISH 
     - file: assignments/WS2.3/README.md
       sections:
       - file: assignments/WS2.3/DFT.ipynb
+      
+# START REMOVE-FROM-PUBLISH 
     - file: assignments/GA2.3/README.md
       sections:
       - file: assignments/GA2.3/ADD NOTEBOOK NAME
@@ -229,10 +229,10 @@ parts:
     sections:
     - file: assignments/PA2.4/README.md
       sections:
-      - file: assignments/PA2.4
-      - file: assignments/PA2.4
-      - file: assignments/PA2.4
-      - file: assignments/PA2.4
+      - file: assignments/PA2.4/file1
+      - file: assignments/PA2.4/file2
+      - file: assignments/PA2.4/file3
+      - file: assignments/PA2.4/file4
  
 # END REMOVE-FROM-PUBLISH
 - caption: Miscellaneous
