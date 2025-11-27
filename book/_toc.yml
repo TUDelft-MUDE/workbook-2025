@@ -222,7 +222,7 @@ parts:
 # START REMOVE-FROM-PUBLISH 
     - file: assignments/GA2.3/README.md
       sections:
-      - file: assignments/GA2.3/ADD NOTEBOOK NAME
+      - file: assignments/GA2.3/Analysis.ipynb  
       - file: assignments/GA2.3/report.md
 
   - file: weeks/week2_4.md
