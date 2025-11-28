@@ -219,12 +219,12 @@ parts:
       sections:
       - file: assignments/WS2.3/DFT.ipynb
       
-# START REMOVE-FROM-PUBLISH 
     - file: assignments/GA2.3/README.md
       sections:
       - file: assignments/GA2.3/Analysis.ipynb  
       - file: assignments/GA2.3/report.md
 
+# START REMOVE-FROM-PUBLISH 
   - file: weeks/week2_4.md
     sections:
     - file: assignments/PA2.4/README.md
