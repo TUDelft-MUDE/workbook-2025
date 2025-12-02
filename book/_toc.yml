@@ -232,12 +232,12 @@ parts:
       - file: assignments/PA2.4/3_asserts.ipynb
       - file: assignments/PA2.4/4_tests.md
         sections:
-        - file: assignments/PA2.4/max_even_squared.py
-        - file: assignments/PA2.4/my_test.py
+        - file: assignments/PA2.4/max_even_squared.md
+        - file: assignments/PA2.4/my_test.md
 # START REMOVE-FROM-PUBLISH  
     - file: assignments/WS2.4/README.md
       sections:
-      - file: assignments/WS2.4/WS_2_4.ipynb #REPLACE LINK
+      - file: assignments/WS2.4/WS_2_4_Atmospheric_Pressure.ipynb
     - file: assignments/GA2.4/README.md
       sections:
       - file: assignments/GA2.4/GA_2_4.ipynb #REPLACE LINK
