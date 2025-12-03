@@ -222,7 +222,7 @@ parts:
       sections:
       - file: assignments/GA2.3/Analysis.ipynb  
       - file: assignments/GA2.3/report.md
-      - file: assignments/GA2.3/data/Addition_to_GA_2_3.md
+      - file: assignments/GA2.3/Addition_to_GA_2_3.md
   - file: weeks/week2_4.md
     sections:
     - file: assignments/PA2.4/README.md
