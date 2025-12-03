@@ -4,10 +4,11 @@
 
 ## 2025-12-02: v2025.33.1.pre-release
 Added [](./assignments/WS2.4/README.md).
+Added .md files of .py files for [](assignments/PA2.4/README.md)
 
 ## 2025-12-01: v2025.33.0.pre-release
 Added solution to[](./assignments/GA2.3/README.md).
-Added solution to[](.assignments/PA2.3/README/md).
+Added solution to[](.assignments/PA2.3/README.md).
 
 ## 2025-11-28: v2025.32.4.pre-release
 Added[](./assignments/GA2.3/README.md).
