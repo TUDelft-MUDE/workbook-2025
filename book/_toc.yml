@@ -233,7 +233,7 @@ parts:
       - file: assignments/PA2.4/4_tests.md
         sections:
         - file: assignments/PA2.4/max_even_squared.md
-        - file: assignments/PA2.4/my_test.md 
+        - file: assignments/PA2.4/my_test_solution.md 
     - file: assignments/WS2.4/README.md
       sections:
       - file: assignments/WS2.4/WS_2_4_Atmospheric_Pressure.ipynb
