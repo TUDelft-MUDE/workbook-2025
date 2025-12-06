@@ -9,7 +9,6 @@ on:
     - '**'
     - '!dependabot**'
     - '!no_solutions' # Exclude the no_solutions branch from triggering the workflow
-    - '!release' # Exclude the release branch from triggering the workflow
     # If your git repository has the Jupyter Book within some-subfolder next to
     # unrelated files, you can make this run only if a file within that specific
     # folder (or the workflow file itself) has been modified.
@@ -75,8 +74,8 @@ env:
 
 
 jobs:
-  merge-to-release:
-    if: ${{ github.ref == 'refs/heads/draft' }}
+  update-submodules:
+    if: ${{ github.ref == 'refs/heads/release' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -93,11 +92,26 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       
-      - name: Merge draft into release
+      - name: Update submodules for release
         run: |
+          # Fetch all branches and ensure we have the target branch
+          git fetch --all
+          # Checkout and reset to origin/release (assumed to exist)
           git checkout release
-          git merge draft --no-ff -m "Auto-merge draft into release"
-          git push origin release
+          git reset --hard origin/release
+
+          # Update all submodules to follow their configured branch (if set in .gitmodules)
+          git submodule update --init --recursive --remote || true
+          echo "Submodule updates complete"
+
+          # If there are changes (updated submodule SHAs), commit them
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "Update submodules according to .gitmodules" || echo "Nothing to commit"
+            git push origin release || true
+          else
+            echo "No changes to submodules"
+          fi
 
       - name: Update submodules for no_solutions
         run: |
@@ -107,34 +121,34 @@ jobs:
           git checkout no_solutions
           git reset --hard origin/no_solutions
 
-          # Merge draft into no_solutions but preserve .gitmodules to avoid conflicts
+          # Merge release into no_solutions but preserve .gitmodules to avoid conflicts
           # Save current .gitmodules
           if [ -f .gitmodules ]; then
             cp .gitmodules .gitmodules.bak
           fi
-          # Merge draft
-          git fetch origin draft
-          git merge --no-edit origin/draft || true
+          # Merge release
+          git fetch origin release
+          git merge --no-edit origin/release || true
           # If merge changed .gitmodules, restore the backup
           if [ -f .gitmodules.bak ]; then
             if ! cmp -s .gitmodules .gitmodules.bak; then
               echo ".gitmodules changed by merge; restoring previous version to avoid conflicts"
               mv .gitmodules.bak .gitmodules
               git add .gitmodules
-              git commit -m "Keep existing .gitmodules while merging draft into no_solutions" || true
+              git commit -m "Keep existing .gitmodules while merging release into no_solutions" || true
             else
               rm -f .gitmodules.bak
             fi
           fi
 
-          # Auto-resolve any submodule conflicts by accepting draft's version (stage the submodule paths)
+          # Auto-resolve any submodule conflicts by accepting release's version (stage the submodule paths)
           if git ls-files -u | grep -q .; then
-            echo "Resolving submodule merge conflicts by accepting draft's version..."
+            echo "Resolving submodule merge conflicts by accepting release's version..."
             git ls-files -u | cut -f2 | sort -u | while read -r path; do
               # Check if this path is a submodule
               if git config -f .gitmodules --get-regexp "submodule\..*\.path" | grep -q " $path$"; then
                 echo "Auto-resolving submodule conflict: $path"
-                # Stage the submodule path to accept the incoming (draft) version
+                # Stage the submodule path to accept the incoming (release) version
                 git add "$path" || true
               fi
             done
@@ -165,8 +179,8 @@ jobs:
       
 
   get-branches:
-    needs: merge-to-release
-    if: always() && (needs.merge-to-release.result == 'success' || needs.merge-to-release.result == 'skipped')
+    needs: update-submodules
+    if: always() && (needs.update-submodules.result == 'success' || needs.update-submodules.result == 'skipped')
     runs-on: ubuntu-latest
     outputs:
       branches: ${{ steps.set-branches.outputs.branches }}
@@ -229,9 +243,9 @@ jobs:
           exit 1
         fi
 
-
   build-books:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     needs: get-branches
     if: ${{ needs.get-branches.outputs.branches != '[]' }}
     permissions:
@@ -390,9 +404,9 @@ jobs:
         if [ -s stderr.log ]; then
           {
             echo "On branch \\\`${{ matrix.branch }}\\\`:"
-            echo '\`\`\`'
+            echo '```'
             cat stderr.log
-            echo '\`\`\`'
+            echo '```'
           } >> summary.md
         fi
 
@@ -428,8 +442,7 @@ jobs:
     needs:
     - get-branches
     - build-books
-    outputs:
-      summary: ${{ steps.output-summary.outputs.summary }}
+    timeout-minutes: 30
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -817,15 +830,11 @@ jobs:
       id: deployment
       uses: actions/deploy-pages@v4
 
-    # source: https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#example-of-a-multiline-string
-    - name: Output summary
-      id: output-summary
-      run: |
-        {
-          echo 'summary<<EOF'
-          cat summary.md
-          echo EOF
-        } >> "$GITHUB_OUTPUT"
+    - name: Upload summary as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: _final-summary
+        path: summary.md
 
   summarize:
     if: always()
@@ -833,18 +842,24 @@ jobs:
       - get-branches
       - deploy-books
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
+    - name: Download final summary artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: _final-summary
+        path: ./
     - name: Summarize
       run: |
-
-        echo "${{ needs.deploy-books.outputs.summary }}" >> $GITHUB_STEP_SUMMARY
-
-        if [ "${{ needs.deploy-books.outputs.summary }}" == "" ]; then
+        # Append the aggregated summary to Actions summary
+        if [ -f summary.md ]; then
+          cat summary.md >> "$GITHUB_STEP_SUMMARY"
+        else
           {
             echo "An unknown error has occurred, cannot display summary. It may be there were too many errors or warnings in the book build process."
             echo
             echo "- You can try building the books locally, or inspecting the workflow run logs to troubleshoot the issue."
-          } >> $GITHUB_STEP_SUMMARY
+          } >> "$GITHUB_STEP_SUMMARY"
         fi
 
         isdefault() {
@@ -868,7 +883,6 @@ jobs:
           echo "BRANCHES_ARCHIVED=$BRANCHES_ARCHIVED $(isdefault ${{ vars.BRANCHES_ARCHIVED }})"
           echo '```'
         } >> $GITHUB_STEP_SUMMARY
-
 
 
 permissions:
