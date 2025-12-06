@@ -16,6 +16,7 @@ on:
     paths:
     - book/**
     - requirements.txt
+    - .gitmodules
   workflow_dispatch:
 
 # Inherit configuration variables in the environment, or assign default values.
@@ -107,7 +108,7 @@ jobs:
           # If there are changes (updated submodule SHAs), commit them
           if [ -n "$(git status --porcelain)" ]; then
             git add .
-            git commit -m "Update submodules according to .gitmodules" || echo "Nothing to commit"
+            git commit -m "Update submodules according to .gitmodules [skip ci]" || echo "Nothing to commit"
             git push origin release || true
           else
             echo "No changes to submodules"
@@ -168,7 +169,7 @@ jobs:
           # If there are changes (updated submodule SHAs), commit them
           if [ -n "$(git status --porcelain)" ]; then
             git add .
-            git commit -m "Update submodules according to .gitmodules" || echo "Nothing to commit"
+            git commit -m "Update submodules according to .gitmodules [skip ci]" || echo "Nothing to commit"
           else
             echo "No changes to submodules"
           fi
