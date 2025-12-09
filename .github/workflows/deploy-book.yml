@@ -7,8 +7,6 @@ on:
   push:
     branches:
     - '**'
-    - '!dependabot**'
-    - '!no_solutions' # Exclude the no_solutions branch from triggering the workflow
     # If your git repository has the Jupyter Book within some-subfolder next to
     # unrelated files, you can make this run only if a file within that specific
     # folder (or the workflow file itself) has been modified.
@@ -136,7 +134,7 @@ jobs:
               echo ".gitmodules changed by merge; restoring previous version to avoid conflicts"
               mv .gitmodules.bak .gitmodules
               git add .gitmodules
-              git commit -m "Keep existing .gitmodules while merging release into no_solutions" || true
+              git commit -m "Keep existing .gitmodules while merging release into no_solutions [skip ci]" || true
             else
               rm -f .gitmodules.bak
             fi
