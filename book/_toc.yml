@@ -246,13 +246,10 @@ parts:
     - file: assignments/PA2.5/README.md
       sections:
       - file: assignments/PA2.5/1_packaging.md
-
-# START REMOVE-FROM-PUBLISH
-
     - file: assignments/WS2.5/README.md
       sections:
       - file: assignments/WS2.5/WS_2_5_profit_vs_planet.ipynb
-
+# START REMOVE-FROM-PUBLISH
 # END REMOVE-FROM-PUBLISH
 
 - caption: Miscellaneous
