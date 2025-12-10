@@ -249,6 +249,7 @@ parts:
     - file: assignments/WS2.5/README.md
       sections:
       - file: assignments/WS2.5/WS_2_5_profit_vs_planet.ipynb
+      
 # START REMOVE-FROM-PUBLISH
 # END REMOVE-FROM-PUBLISH
 
