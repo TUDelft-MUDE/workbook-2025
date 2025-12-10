@@ -173,7 +173,7 @@
 [submodule "book/assignments/GA2.4"]
 	path = book/assignments/GA2.4
 	url = https://github.com/MUDE-2025/GA2.4.git
-	branch = assignment
+	branch = solution
 [submodule "book/assignments/GA2.5"]
 	path = book/assignments/GA2.5
 	url = https://github.com/MUDE-2025/GA2.5.git

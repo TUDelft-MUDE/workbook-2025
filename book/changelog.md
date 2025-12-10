@@ -4,6 +4,7 @@
 
 ## 2025-12-09: v2025.35.1.pre-release
 Added [](./assignments/WS2.5/README.md).
+Added solutions to [](./assignments/GA2.4/README.md).
 
 ## 2025-12-06 : v2025.35.0.pre-release
 Added solutions to [](./assignments/PA2.4/README.md).
