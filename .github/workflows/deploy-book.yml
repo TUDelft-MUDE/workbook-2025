@@ -127,7 +127,7 @@ jobs:
           fi
           # Merge release
           git fetch origin release
-          git merge --no-edit origin/release || true
+          git merge --no-edit -m "Merge release into no_solutions [skip ci]" origin/release || true
           # If merge changed .gitmodules, restore the backup
           if [ -f .gitmodules.bak ]; then
             if ! cmp -s .gitmodules .gitmodules.bak; then
