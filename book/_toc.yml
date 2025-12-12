@@ -254,6 +254,12 @@ parts:
       - file: assignments/GA2.5/Analysis_GA.ipynb
       - file: assignments/GA2.5/Analysis_MILP.ipynb
       - file: assignments/GA2.5/report.md
+  - file: weeks/week2_6.md
+    sections:
+    - file: assignments/PA2.6/README.md
+      sections:
+      - file: assignments/PA2.6/split.ipynb
+      - file: assignments/PA2.6/split.md
 
 - caption: Miscellaneous
   chapters:
