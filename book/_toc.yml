@@ -259,7 +259,8 @@ parts:
     - file: assignments/PA2.6/README.md
       sections:
       - file: assignments/PA2.6/split.ipynb
-      - file: assignments/PA2.6/split.md
+        sections:
+        - file: assignments/PA2.6/split_py.md
 
 - caption: Miscellaneous
   chapters:
