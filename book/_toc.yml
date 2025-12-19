@@ -264,6 +264,10 @@ parts:
     - file: assignments/WS2.6/README.md
       sections:  
       - file: assignments/WS2.6/neuralnets.ipynb
+    - file: assignments/GA2.6/README.md
+      sections:
+      - file: assignments/GA2.6/flood.ipynb
+      - file: assignments/GA2.6/report.md
 
 - caption: Miscellaneous
   chapters:
