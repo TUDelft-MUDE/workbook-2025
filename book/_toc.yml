@@ -268,7 +268,6 @@ parts:
       sections:
       - file: assignments/GA2.6/flood.ipynb
       - file: assignments/GA2.6/report.md
-
   #- file: weeks/week2_7.md
   #  sections:
   #  - file: assignments/PA2.7/README.md
@@ -281,7 +280,6 @@ parts:
   #    sections:
   #    - file: assignments/GA2.7/torrential_tales.ipynb
   #    - file: assignments/GA2.7/report_template.md
-
 - caption: Miscellaneous
   chapters:
   - file: changelog.md
