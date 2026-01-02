@@ -268,11 +268,11 @@ parts:
       sections:
       - file: assignments/GA2.6/flood.ipynb
       - file: assignments/GA2.6/report.md
-  #- file: weeks/week2_7.md
-  #  sections:
-  #  - file: assignments/PA2.7/README.md
-  #    sections:
-  #    - file: assignments/PA2.7/PA_2_7_Data_Bears.ipynb
+  - file: weeks/week2_7.md
+    sections:
+    - file: assignments/PA2.7/README.md
+      sections:
+      - file: assignments/PA2.7/PA_2_7_Data_Bears.ipynb
   #  - file: assignments/WS2.7/README.md
   #    sections:  
   #    - file: assignments/WS2.7/ipynb_template.ipynb
