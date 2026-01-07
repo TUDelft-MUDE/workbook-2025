@@ -273,7 +273,7 @@ parts:
     - file: assignments/PA2.7/README.md
       sections:
       - file: assignments/PA2.7/PA_2_7_Data_Bears.ipynb
-  #  - file: assignments/WS2.7/README.md
+      - file: assignments/WS2.7/README.md
   #    sections:  
   #    - file: assignments/WS2.7/ipynb_template.ipynb
   #  - file: assignments/GA2.7/README.md
