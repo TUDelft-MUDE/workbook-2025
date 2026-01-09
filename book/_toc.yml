@@ -276,10 +276,10 @@ parts:
     - file: assignments/WS2.7/README.md
       sections:  
       - file: assignments/WS2.7/analysis.ipynb
-  #  - file: assignments/GA2.7/README.md
-  #    sections:
-  #    - file: assignments/GA2.7/torrential_tales.ipynb
-  #    - file: assignments/GA2.7/report_template.md
+    - file: assignments/GA2.7/README.md
+      sections:
+      - file: assignments/GA2.7/torrential_tales.ipynb
+      - file: assignments/GA2.7/report_template.md
 - caption: Miscellaneous
   chapters:
   - file: changelog.md
