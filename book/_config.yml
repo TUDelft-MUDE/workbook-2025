@@ -19,7 +19,7 @@ sphinx:
         image_dark: MUDE_Logo-small.png
       repository_url: "https://github.com/TUDelft-MUDE/workbook-2025"
       path_to_docs: "book"
-      repository_branch: "draft"
+      repository_branch: "release"
       use_repository_button: true
       use_issues_button : true
       announcement: "<p>This version of the workbook doesn't include solutions. The version with solution can be found here: <a href='https://mude.citg.tudelft.nl/workbook-2025' style='color: cyan;'>mude.citg.tudelft.nl/workbook-2025</a></p>"
