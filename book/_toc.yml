@@ -280,6 +280,15 @@ parts:
       sections:
       - file: assignments/GA2.7/torrential_tales.ipynb
       - file: assignments/GA2.7/report_template.md
+  - file: weeks/week2_8.md
+    sections:
+    - file: assignments/WS2.8/README.md
+      sections:  
+      - file: assignments/WS2.8/WS_2_8_expensive_urn.ipynb
+#    - file: assignments/GA2.7/README.md
+#      sections:
+#      - file: assignments/GA2.7/torrential_tales.ipynb
+#      - file: assignments/GA2.7/report_template.md
 - caption: Miscellaneous
   chapters:
   - file: changelog.md
