@@ -9,9 +9,9 @@ The structure of the book and formatting of contents is done under direction of 
 
 > `<Primary Authors>`, `<Title of Chapter or Page>`. In Ding et al. (n.d.), _Modelling, Uncertainty and Data for Engineers (MUDE) workbook._ Delft University of Technology. https://mude.citg.tudelft.nl/workbook-2025/<...>`, version `<version_number>`, CC BY 4.0.
 
-Please note that a DOI is created only for complete versions (i.e., this will be created in spring 2026, when the entire source code is also released). The assignments in their entirety are available for the previous year (2024), which was in the form of a github repository and FTP-like website. Refer to the 2024 version as follows:
+Please note that a DOI is created only for complete versions
 
-> Lanzafame, R. (Ed.) (2024), _Modelling, Uncertainty and Data for Engineers (MUDE) Files._ Delft University of Technology. https://github.com/tudelft-mude/2024-files, version v2024.1.0, CC BY 4.0. [doi:10.5281/zenodo.16782515](https://doi.org/10.5281/zenodo.16782515).
+> Ding, J. Lanzafame, R., van der Meer, F. van Woudenberg, T., Verhagen, S. (Eds.) (2025), Modelling, Uncertainty and Data for Engineers (MUDE) Workbook, Delft University of Technology. https://mude.citg.tudelft.nl/workbook-2025, version v2025.39.5, CC BY 4.0. [doi:10.5281/zenodo.18309674](https://doi.org/10.5281/zenodo.18309674).
 
 ## How the book is made
 
