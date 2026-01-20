@@ -1,5 +1,8 @@
 # MUDE workbook 2025
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18309674.svg)](https://doi.org/10.5281/zenodo.18309674)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18309449.svg)](https://doi.org/10.5281/zenodo.18309449)
+
 This repository contains MUDE Files from the 2025-2026 academic year. MUDE stands for Modelling, Uncertainty and Data for Engineers, a required module in the MSc programs from the faculty of Civil Engineering and Geosciences at Delft University of Technology in the Netherlands. Note that the MUDE Textbook is published separately: for the 2025-26 academic year, see [mude.citg.tudelft.nl/book/2025](https://mude.citg.tudelft.nl/book/2025).
 
 The primary purpose of this repository is to share the weekly assignments and solutions: programming assignments (PA), workshops (WS) and group assignments (GA). This is almost entirely Jupyter Notebooks. We have really shared everything, work in progress and all, so while there is a tremendous amount of material here, it will certainly take some time to sort through it if you are not intimately familiar with MUDE. To help with this matter, you might want to have a look at the presentation the presentation _Enhancing Student Experience While Modernizing the Curriculum,_ available at [doi.org/10.5281/zenodo.10879193](https://doi.org/10.5281/zenodo.10879193): the target audience was TU Delft staff in other faculties, but there is a general overview of MUDE that may be helpful.
